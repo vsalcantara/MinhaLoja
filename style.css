@@ -50,6 +50,10 @@ button:active {
     background: #121529;
 }
 
+.icon-img {
+    width: 2rem;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -521,5 +525,265 @@ input:focus {
 
     .result-card strong {
         font-size: 18px;
+    }
+}
+
+
+/* =====================================
+   HISTÓRICO DE VENDAS
+===================================== */
+
+.history-section {
+    margin-top: 20px;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.history-card {
+    background: #171b2d;
+    border: 1px solid #303650;
+    border-radius: 12px;
+    padding: 18px;
+}
+
+.history-header,
+.history-product,
+.history-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.history-header {
+    margin-bottom: 15px;
+}
+
+.history-header h3 {
+    color: #ffffff;
+}
+
+.history-header span {
+    color: #a8aec8;
+    font-size: 13px;
+}
+
+.history-products {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-product {
+    color: #c4c9df;
+    font-size: 14px;
+}
+
+.history-total {
+    border-top: 1px solid #303650;
+    margin-top: 15px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+
+.history-total strong:last-child {
+    color: #20c997;
+}
+
+/* BOTÃO FINALIZAR VENDA */
+
+.sale-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sale-footer button {
+    width: 100%;
+}
+
+
+/* ==========================
+   TELA DE LOGIN
+========================== */
+
+.login-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #171321, #211a32);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px;
+    background: #241e32;
+    border: 1px solid #403650;
+    border-radius: 18px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+}
+
+.login-logo {
+    color: #a78bfa;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-subtitle {
+    color: #a78bfa;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.login-card h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.login-description {
+    color: #aaa2b8;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.login-card label {
+    display: block;
+    color: #e5e0ee;
+    font-size: 14px;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 13px 14px;
+    background: #191522;
+    border: 1px solid #514563;
+    border-radius: 9px;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.login-card input:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 2px rgba(167, 139, 250, 0.15);
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    padding-right: 75px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #a78bfa;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 9px;
+    background: #8b5cf6;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background: #7c3aed;
+    transform: translateY(-2px);
+}
+
+.login-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.login-message {
+    color: #ff7777;
+    font-size: 13px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.login-footer {
+    color: #82788f;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.daily-closures {
+    margin-top: 25px;
+}
+
+.daily-closures h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+#closuresList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#closuresList > p {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* RESPONSIVIDADE DO HISTÓRICO */
+
+@media (max-width: 480px) {
+
+    .history-card {
+        padding: 14px;
+    }
+
+    .history-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .login-card {
+        padding: 28px 22px;
+    }
+
+    .login-card h1 {
+        font-size: 24px;
     }
 }

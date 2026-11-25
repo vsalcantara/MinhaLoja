@@ -1,0 +1,27 @@
+{
+  "name": "minhaloja",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsalcantara/MinhaLoja.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vsalcantara/MinhaLoja/issues"
+  },
+  "homepage": "https://github.com/vsalcantara/MinhaLoja#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}
